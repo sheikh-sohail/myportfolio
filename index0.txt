@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dev Narayan - Automation Tester Portfolio">
+    <title>Dev Narayan - Automation Tester Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; background-color: #f2f2f2; color: #333; }
+
+        /* Header */
+        header {
+            background-color: #0e4d92;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+            position: relative;
+        }
+        header h1 { font-size: 3.5rem; margin-bottom: 10px; }
+        header p { font-size: 1.3rem; }
+        header::after {
+            content: "";
+            background: url('https://www.transparenttextures.com/patterns/old-map.png') repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.05;
+        }
+
+        /* Navigation */
+        nav {
+            text-align: center;
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #0e4d92;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ff6347;
+        }
+
+        /* Main content */
+        .content-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #0e4d92;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #666;
+        }
+
+        /* Contact Section */
+        .contact-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #0e4d92;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        .contact-btn:hover {
+            background-color: #ff6347;
+        }
+
+        footer {
+            background-color: #0e4d92;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .card-container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Dev Narayan</h1>
+        <p>Java Selenium Automation Tester | API Tester | 2+ Years of Experience</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a> <!-- Link to Resume Section -->
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content-container">
+
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Who I Am</h3>
+                    <p>Hi! I'm Dev Narayan, an experienced QA Engineer with a strong background in Java, Selenium, TestNG, and API testing. With 2+ years of hands-on experience, I've developed robust automation scripts and testing frameworks to ensure the delivery of high-quality software applications.</p>
+                </div>
+                <div class="card">
+                    <h3>What I Do</h3>
+                    <p>I specialize in automation testing using Selenium WebDriver and Java, along with API testing, regression testing, and cross-browser testing. I’m passionate about building scalable and maintainable automation solutions that speed up testing cycles while maintaining high-quality standards.</p>
+                </div>
+                <div class="card">
+                    <h3>My Approach</h3>
+                    <p>With a keen eye for detail and a commitment to quality, I take a methodical approach to test design and execution. I believe in clear communication, continuous improvement, and collaboration with development teams to ensure that every feature is thoroughly tested and delivered on time.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Automation Testing</h3>
+                    <p>Experienced with Selenium WebDriver, TestNG, and Page Object Model (POM) framework for efficient and scalable test automation.</p>
+                </div>
+                <div class="card">
+                    <h3>API Testing</h3>
+                    <p>Hands-on experience with API testing using tools like Postman and Swagger for functional and security testing.</p>
+                </div>
+                <div class="card">
+                    <h3>Tools & Technologies</h3>
+                    <p>Proficient in tools like Maven, Jenkins, Jira, Git, and Eclipse for build automation, CI/CD, and version control.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Credit Card System Automation</h3>
+                    <p>Automated functional and regression testing for a credit card system using Selenium WebDriver, TestNG, and Page Object Model.</p>
+                </div>
+                <div class="card">
+                    <h3>Data-Driven Testing Framework</h3>
+                    <p>Developed a data-driven testing framework that supports multiple datasets, improving test coverage and automation efficiency.</p>
+                </div>
+                <div class="card">
+                    <h3>API Testing for Banking Application</h3>
+                    <p>Performed API testing for a banking application to validate endpoint functionality, data integrity, and performance using Postman and JMeter.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume">
+            <h2>My Resume</h2>
+            <!-- Embedded PDF Viewer -->
+            <iframe src="Resume.pdf" width="100%" height="600px" style="border: none;"></iframe>
+            <p>Or <a href="Resume.pdf" download class="contact-btn">Download my Resume here</a>.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you're looking to discuss opportunities or collaborations, feel free to reach out to me!</p>
+            <a href="mailto:dnarayannnn0@gmail.com" class="contact-btn">Email Me</a>
+            <a href="https://www.linkedin.com/in/dev-narayan-467677243/" class="contact-btn">LinkedIn Profile</a>
+            <a href="Resume.pdf" download class="contact-btn">Download My Resume</a> <!-- Resume Download Button -->
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Dev Narayan | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
