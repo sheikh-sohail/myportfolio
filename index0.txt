@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dev Narayan - Automation Tester Portfolio">
-    <title>Dev Narayan - Automation Tester Portfolio</title>
+    <meta name="description" content="Sohail Sheikh - Automation Tester Portfolio">
+    <title>Sohail Sheikh - Automation Tester Portfolio</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Arial', sans-serif; background-color: #f2f2f2; color: #333; }
@@ -137,8 +137,8 @@
 
     <!-- Header -->
     <header>
-        <h1>Dev Narayan</h1>
-        <p>Java Selenium Automation Tester | API Tester | 2+ Years of Experience</p>
+        <h1>Sohail Sheikh</h1>
+        <p>Java Selenium Automation Tester | API Tester | 2.5+ Years of Experience</p>
     </header>
 
     <!-- Navigation -->
@@ -159,7 +159,7 @@
             <div class="card-container">
                 <div class="card">
                     <h3>Who I Am</h3>
-                    <p>Hi! I'm Dev Narayan, an experienced QA Engineer with a strong background in Java, Selenium, TestNG, and API testing. With 2+ years of hands-on experience, I've developed robust automation scripts and testing frameworks to ensure the delivery of high-quality software applications.</p>
+                    <p>Hi! I'm Sohail Sheikh, an experienced QA Engineer with a strong background in Java, Selenium, TestNG, and API testing. With 2+ years of hands-on experience, I've developed robust automation scripts and testing frameworks to ensure the delivery of high-quality software applications.</p>
                 </div>
                 <div class="card">
                     <h3>What I Do</h3>
@@ -222,15 +222,15 @@
         <section id="contact">
             <h2>Contact</h2>
             <p>If you're looking to discuss opportunities or collaborations, feel free to reach out to me!</p>
-            <a href="mailto:dnarayannnn0@gmail.com" class="contact-btn">Email Me</a>
-            <a href="https://www.linkedin.com/in/dev-narayan-467677243/" class="contact-btn">LinkedIn Profile</a>
+            <a href="mailto:sohailsheikh641@gmail.com" class="contact-btn">Email Me</a>
+            <a href="https://www.linkedin.com/in/-sohail-sheikh/" class="contact-btn">LinkedIn Profile</a>
             <a href="Resume.pdf" download class="contact-btn">Download My Resume</a> <!-- Resume Download Button -->
         </section>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Dev Narayan | All Rights Reserved</p>
+        <p>&copy; 2025 Sohail Sheikh | All Rights Reserved</p>
     </footer>
 
 </body>
