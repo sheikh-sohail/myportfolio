@@ -90,6 +90,49 @@
             color: #666;
         }
 
+        /* Card style for project section */
+        .projects-card-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .projects-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin: auto;
+        }
+
+        .img {
+            margin-bottom: 15px;
+        }
+
+        .projects-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .projects-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .projects-card p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #666;
+            text-align: justify;
+        }
+
         /* Contact Section */
         .contact-btn {
             display: inline-block;
@@ -103,6 +146,7 @@
             text-align: center;
             transition: background-color 0.3s ease;
         }
+
         .contact-btn:hover {
             background-color: #ff6347;
         }
@@ -122,4 +166,65 @@
             .card-container {
                 grid-template-columns: repeat(1, 1fr);
             }
+            .projects-card-container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        /* Skills Section */
+        .clients-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+          }
+
+        .clients-item {
+            position: relative;
+            padding: 10px;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .clients-item img {
+            width: 60px;
+            height: 60px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .clients-item:hover {
+            border: 2px solid #007bff; /* Blue border effect */
+            background-color: rgba(0, 123, 255, 0.1); /* Light blue background */
+            border-radius: 10px;
+        }
+        
+        .clients-item:hover img {
+            transform: scale(1.1); /* Slightly enlarge icon on hover */
+        }
+
+        /* Tooltip Styles */
+        .clients-item::after {
+            content: attr(data-title);
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #333;
+            color: white;
+            padding: 5px 8px;
+            border-radius: 5px;
+            font-size: 12px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease-in-out;
+            white-space: nowrap;
+        }
+        
+        .clients-item:hover::after {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        ul {
+            list-style-type: none;
         }

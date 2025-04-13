@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sohail Sheikh - Automation Tester Portfolio">
-    <title>Sohail Sheikh - Automation Tester Portfolio</title>
+    <meta name="description" content="Sohail Sheikh - Personal Portfolio">
+    <title>Sohail Sheikh - Personal Portfolio</title>
+    <link rel="icon" href="./images/logo.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -49,6 +50,65 @@
         <!-- Skills Section -->
         <section id="skills">
             <h2>Skills</h2>
+            <section class="clients">
+                <ul class="clients-list has-scrollbar">
+                  <li class="clients-item" data-title="Java">
+                    <a href="#">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                    </a>
+                  </li>
+                  <li class="clients-item" data-title="MySQL">
+                    <a href="#">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                    </a>
+                  </li>
+                  <li class="clients-item" data-title="Selenium">
+                    <a href="#">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" alt="Selenium">
+                    </a>
+                  </li>
+                  <li class="clients-item" data-title="Cucumber">
+                    <a href="#">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cucumber/cucumber-plain.svg" alt="Cucumber">
+                    </a>
+                  </li>
+                  <li class="clients-item" data-title="Eclipse">
+                    <a href="#">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Eclipse">
+                    </a>
+                  </li>
+                  <li class="clients-item" data-title="Maven">
+                    <a href="#">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" alt="Maven">
+                    </a>
+                  </li>
+                  <li class="clients-item" data-title="GitHub">
+                    <a href="#">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                    </a>
+                  </li>
+                  <li class="clients-item" data-title="Jira">
+                    <a href="#">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="Jira">
+                    </a>
+                  </li>
+                  <li class="clients-item" data-title="VS Code">
+                    <a href="#">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+                    </a>
+                  </li>
+                  <li class="clients-item" data-title="Postman">
+                    <a href="#">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman">
+                    </a>
+                  </li>
+                  <li class="clients-item" data-title="Jenkins CI/CD">
+                    <a href="#">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins CI/CD">
+                    </a>
+                  </li>
+            </section>
+
             <div class="card-container">
                 <div class="card">
                     <h3>Automation Testing</h3>
@@ -68,18 +128,24 @@
         <!-- Projects Section -->
         <section id="projects">
             <h2>Projects</h2>
-            <div class="card-container">
-                <div class="card">
+            <div class="projects-card-container">
+                <!-- <div class="projects-card">
                     <h3>Credit Card System Automation</h3>
                     <p>Automated functional and regression testing for a credit card system using Selenium WebDriver, TestNG, and Page Object Model.</p>
                 </div>
-                <div class="card">
+                <div class="projects-card">
                     <h3>Data-Driven Testing Framework</h3>
                     <p>Developed a data-driven testing framework that supports multiple datasets, improving test coverage and automation efficiency.</p>
+                </div> -->
+                <div class="projects-card">
+                    <img src="images/petstore.jpeg" class="img" alt="image from project 1: Swagger Pet Store API Testing" width="400" height="210">
+                    <h3>Swagger Pet Store API Testing</h3>
+                    <p>This project focuses on automating the testing of the Petstore API. The project uses Rest-Assured Framework to validate API endpoints, ensuring functionality and reliability with expected behaviors.</p>
                 </div>
-                <div class="card">
-                    <h3>API Testing for Banking Application</h3>
-                    <p>Performed API testing for a banking application to validate endpoint functionality, data integrity, and performance using Postman and JMeter.</p>
+                <div class="projects-card">
+                    <img src="images/fakenews.png" class="img" alt="image from project 1: Fake News classification using BI-LSTM RNN" width="400">
+                    <h3>Fake News classification using BI-LSTM RNN</h3>
+                    <p>The project was to classify news into categories of whether it's fake or true. To do that, we needed a model that would learn patterns from data. Data was taken from Kaggle; we had 2 data sets: IEEE and ISOT.</p>
                 </div>
             </div>
         </section>
