@@ -10,6 +10,15 @@
 </head>
 <body>
 
+    <!-- <div class="global-nav">
+      <div class="global-nav-menu">
+        <a href="./index.html">
+          <img src="images/logo.png" class="iocn-img"  width="40px" height="40px">
+        </a>
+        <p>Hello</p>
+      </div>
+    </div> -->
+
     <!-- Header -->
     <header>
         <h1>Sohail Sheikh</h1>
@@ -155,16 +164,31 @@
             <h2>My Resume</h2>
             <!-- Embedded PDF Viewer -->
             <iframe src="Resume.pdf" width="100%" height="600px" style="border: none;"></iframe>
-            <p>Or <a href="Resume.pdf" download class="contact-btn">Download my Resume here</a>.</p>
+            <p><a href="Resume.pdf" download class="contact-btn">Download Resume</a></p>
         </section>
 
         <!-- Contact Section -->
         <section id="contact">
             <h2>Contact</h2>
-            <p>If you're looking to discuss opportunities or collaborations, feel free to reach out to me!</p>
-            <a href="mailto:sohailsheikh641@gmail.com" class="contact-btn">Email Me</a>
-            <a href="https://www.linkedin.com/in/-sohail-sheikh/" class="contact-btn">LinkedIn Profile</a>
-            <a href="Resume.pdf" download class="contact-btn">Download My Resume</a> <!-- Resume Download Button -->
+            <section class="contact-icon">
+              <p>If you're looking to discuss opportunities or collaborations, feel free to reach out to me!</p>
+              <ul class="contact-list has-scrollbar">
+                <li class="contact-item" data-title="Gmail">
+                  <a href="mailto:sohailsheikh641@gmail.com">
+                    <img src="https://cdn.jsdelivr.net/gh/shlinux/faenza-icon-theme/Faenza/apps/scalable/gmail.svg" alt="Gmail">
+                  </a>
+                </li>
+                <li class="contact-item" data-title="LinkedIn Profile">
+                  <a href="https://www.linkedin.com/in/-sohail-sheikh/">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+                  </a>
+                </li>
+                <li class="contact-item" data-title="GitHub Profile">
+                  <a href="https://github.com/sheikh-sohail">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                  </a>
+                </li>
+            </section>
         </section>
     </div>
 
