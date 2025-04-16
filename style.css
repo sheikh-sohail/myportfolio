@@ -10,81 +10,92 @@ body {
     color: #333;
 }
 
-/* .global-nav {
-            display: flex;
-            width: 100%;
-            padding-top: 0px;
-            padding-right: 30px;
-            padding-bottom: 0px;
-            padding-left: 30px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 0; */
-/* opacity: 0; */
-/* background-color: #f4f2ee;
-        } */
-
-/* .global-nav-menu {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            max-width: 1128px;
-            min-height: 4.8rem;
-            margin: 0 auto;
-            margin-top: 0px;
-            margin-right: auto;
-            margin-bottom: 0px;
-            margin-left: auto;
-        } */
-
 /* Header */
-header {
-    background-color: #0e4d92;
-    color: #fff;
-    padding: 50px 0;
-    text-align: center;
-    position: relative;
-}
-
-header h1 {
-    font-size: 3.5rem;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.3rem;
-}
-
-header::after {
-    content: "";
-    background: url('https://www.transparenttextures.com/patterns/old-map.png') repeat;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.05;
+.header-container {
+    background-image: url('./images/background.jpg');
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #333;
 }
 
 /* Navigation */
-nav {
-    text-align: center;
-    background-color: #fff;
-    padding: 10px 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+.nav-container {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    display: flex;
+    padding: 10px;
 }
 
-nav a {
-    margin: 0 20px;
+.nav-container nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-container a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-decoration: none;
-    color: #0e4d92;
-    font-size: 1.1rem;
+    color: #353839;
+    font-size: 1.0rem;
     font-weight: bold;
+    gap: 5px;
+    transition: transform 0.3s ease;
 }
 
-nav a:hover {
-    color: #ff6347;
+.nav-container img {
+    max-width: 25px;
+    margin: 0;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.nav-container a:hover {
+    filter: brightness(1.2);
+    transform: translateY(-3px);
+    color: black;
+}
+
+/* Heading */
+.text-container {
+    position: absolute;
+    top: 170px;
+    right: 210px;
+}
+
+.text-container h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    margin-bottom: 15px;
+    color: black;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+.text-container p {
+    font-size: 1.26rem;
+    color: black;
+    margin: 0;
+}
+
+.img-container {
+    position: absolute;
+    top: 108px;
+    right: 995px;
+}
+
+.img-container img {
+    width: 100px;
+    height: 100px;
+}
+
+.img-container:hover img {
+    transform: scale(1.02);
 }
 
 /* Main content */
@@ -208,7 +219,7 @@ h2 {
 
 .contact-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: column;
     gap: 200px;
     justify-content: center;
 }
@@ -221,8 +232,8 @@ h2 {
 }
 
 .contact-item img {
-    width: 35px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -255,9 +266,10 @@ h2 {
 
 /* Footer section */
 footer {
-    background-color: #0e4d92;
-    color: #fff;
+    background-image: url('./images/background.jpg');
     text-align: center;
+    font-weight: 100;
+    font-size: larger;
     padding: 20px;
     position: relative;
     bottom: 0;
