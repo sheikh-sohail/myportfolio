@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     background-color: transparent;
     color: #333;
 }
@@ -18,6 +18,7 @@ body {
     background-repeat: no-repeat;
     height: 350px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: flex-end;
     color: #333;
@@ -27,8 +28,10 @@ body {
 .nav-container {
     position: absolute;
     top: 20px;
-    right: 50px;
+    right: 60px;
     display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
     padding: 10px;
 }
 
@@ -44,10 +47,10 @@ body {
     align-items: center;
     text-decoration: none;
     color: #353839;
-    font-size: 1.0rem;
+    font-size: 1rem;
     font-weight: bold;
     gap: 5px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .nav-container img {
@@ -65,15 +68,16 @@ body {
 /* Heading */
 .text-container {
     position: absolute;
-    top: 170px;
+    top: 175px;
     right: 210px;
+    text-align: center;
 }
 
 .text-container h1 {
     font-size: 2.5rem;
     margin: 0;
     margin-bottom: 15px;
-    color: black;
+    color: #2d3863 ;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 }
 
@@ -299,6 +303,65 @@ footer {
 
     .contact-list {
         gap: 80px;
+    }
+
+    .header-container {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .nav-container {
+        position: relative; /* Remove absolute positioning */
+        top: 60px;
+        right: 0;
+        padding: 20px;
+    }
+
+    .nav-container nav {
+        justify-content: space-between;
+        gap: 27px;
+        
+    }
+
+    .nav-container a {
+        gap: 10px; /* Add spacing between icon and text */
+        font-size: 10px;
+    }
+
+    .nav-container img {
+        max-width: 18px; /* Slightly increase icon size for mobile */
+    }
+
+    .text-container {
+        position: absolute;
+        top: 40px;
+        right: 30%;
+        transform: translate(50%);
+        text-align: center;
+    }
+
+    .text-container h1 {
+        font-size: 1.1rem; /* Reduce font size */
+        margin-bottom: 5px;
+    }
+
+    .text-container p {
+        font-size: 0.55rem; /* Adjust font size */
+    }
+
+    .img-container {
+        position: absolute;
+        top: 28px;
+        right: 76%;
+        transform: translateX(50%);
+    }
+
+    .img-container img {
+        width: 30px; /* Reduce logo size */
+        height: 30px;
     }
 }
 
