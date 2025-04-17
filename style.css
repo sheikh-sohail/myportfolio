@@ -346,6 +346,8 @@ footer {
     .text-container h1 {
         font-size: 1.1rem; /* Reduce font size */
         margin-bottom: 5px;
+        color: #2d3863 ;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0);
     }
 
     .text-container p {
@@ -354,14 +356,18 @@ footer {
 
     .img-container {
         position: absolute;
-        top: 28px;
-        right: 76%;
+        top: 28.4px;
+        right: 76.2%;
         transform: translateX(50%);
     }
 
     .img-container img {
         width: 30px; /* Reduce logo size */
         height: 30px;
+    }
+
+    footer {
+        font-size: medium;
     }
 }
 
